@@ -1,0 +1,1 @@
+echo "/time" | nc -u localhost 8080
