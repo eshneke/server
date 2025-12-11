@@ -1,0 +1,16 @@
+[Unit]
+Description=Simple TCP/UDP Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/simple-server 8080
+Restart=on-failure
+RestartSec=5
+User=nobody
+Group=nogroup
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
