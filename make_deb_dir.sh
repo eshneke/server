@@ -1,0 +1,1 @@
+mkdir -p simple-server-1.0/{DEBIAN,usr/bin,usr/lib/systemd/system}
